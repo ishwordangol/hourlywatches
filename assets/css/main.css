@@ -22,6 +22,11 @@
   font-style: normal;
 }
 
+body {
+  font-family: "helvetica", sans-serif;
+  font-size: 14px;
+}
+
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -58,11 +63,6 @@
 .animate__fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-}
-
-body {
-  font-family: "helvetica", sans-serif;
-  font-size: 14px;
 }
 
 .btn:link,
