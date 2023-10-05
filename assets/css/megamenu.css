@@ -978,7 +978,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
   .nav-menu > li > a {
     margin-right: 24px;
   }

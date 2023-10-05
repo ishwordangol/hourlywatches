@@ -225,7 +225,7 @@ body {
   color: var(--primary);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
   #exploreSlider .slick-slide {
     margin: 16px 50px;
   }
