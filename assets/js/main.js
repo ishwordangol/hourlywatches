@@ -27,7 +27,7 @@ var $slider = $('#exploreSlider');
 
 $slider.slick({
   autoplay: false,
-  dots: false,
+  dots: true,
   centerMode: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -43,13 +43,16 @@ $slider.slick({
     {
       breakpoint: 640,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
       }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 2,
+        infinite: true,
+        centerMode: true,
+        centerPadding: '40px',
       }
     },
     {
