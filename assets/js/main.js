@@ -26,6 +26,12 @@ $slider.slick({
   nextArrow: $('.next-arrow'),
   responsive: [
     {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
       breakpoint: 640,
       settings: {
         slidesToShow: 2,

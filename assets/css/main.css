@@ -197,3 +197,13 @@ body {
     pointer-events: inherit;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #exploreSlider .slick-slide {
+    margin: 16px 0;
+  }
+
+  #exploreSlider .slick-list {
+    margin: 0;
+  }
+}
