@@ -44,6 +44,8 @@ $slider.slick({
       breakpoint: 640,
       settings: {
         slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '0px',
       }
     },
     {
@@ -51,8 +53,6 @@ $slider.slick({
       settings: {
         slidesToShow: 2,
         infinite: true,
-        centerMode: true,
-        centerPadding: '40px',
       }
     },
     {
@@ -73,9 +73,6 @@ $("#featuredwatchSlider").slick({
   autoplay: false,
   autoplaySpeed: 1000,
   arrows: true,
-  prevArrow:
-    '<button  aria-label="Previous"><i class="icon-prev"></i></button>',
-  nextArrow: '<button  aria-label="Next"><i class="icon-next"></i></button>',
   responsive: [
     {
       breakpoint: 1280,
@@ -127,9 +124,6 @@ $("#featuredbrandSlider").slick({
   autoplay: false,
   autoplaySpeed: 1000,
   arrows: true,
-  prevArrow:
-    '<button  aria-label="Previous"><i class="icon-prev"></i></button>',
-  nextArrow: '<button  aria-label="Next"><i class="icon-next"></i></button>',
   responsive: [
     {
       breakpoint: 1280,
@@ -181,9 +175,6 @@ $("#newarrivalSlider").slick({
   autoplay: false,
   autoplaySpeed: 1000,
   arrows: true,
-  prevArrow:
-    '<button  aria-label="Previous"><i class="icon-prev"></i></button>',
-  nextArrow: '<button  aria-label="Next"><i class="icon-next"></i></button>',
   responsive: [
     {
       breakpoint: 1280,
