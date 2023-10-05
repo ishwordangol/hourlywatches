@@ -1,3 +1,12 @@
+$(window).scroll(function () {
+  var sticky = $(".header_main"),
+    scroll = $(window).scrollTop();
+
+  if (scroll >= 150)
+    sticky.addClass("header-fixed border-b animate__animated animate__fadeInDown");
+  else sticky.removeClass("header-fixed border-b animate__animated animate__fadeInDown");
+});
+
 $(".mainslider").slick({
   arrows: false,
   autoplay: true,
