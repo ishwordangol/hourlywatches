@@ -152,6 +152,20 @@ body {
   border: none;
 }
 
+.header_main.header_dark .navigation-portrait .nav-menu > li > a {
+  color: #000;
+}
+
+.header_main.header_dark .nav-toggle:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: rgb(229, 231, 235);
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0 0 rgb(229, 231, 235), 0 1em 0 0 rgb(229, 231, 235);
+}
+
 .header-fixed nav .navigation-portrait .nav-menus-wrapper {
   height: 100vh;
 }
