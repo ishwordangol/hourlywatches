@@ -121,13 +121,33 @@ $("#featuredwatchSlider, #featuredbrandSlider, #newarrivalSlider").slick({
 
 // search toggle
 
-$('.searchbtn').click(function () {
-  $('.searchbox').slideToggle().show();
-});
-$(document).click(function (e) {
-  if (!$(e.target).closest(".searchbox, .searchbtn").length) {
-    $(".searchbox").slideUp();
+function goToSearchtPage() {
+  window.location.href = "search.html"; // Change the URL to your desired next page
+}
+function checkScreenWidth() {
+  if ($(window).width() >= 768) {
+    $('.searchbtn').click(function (e) {
+      e.stopPropagation();
+      $('.searchbox').slideToggle();
+    });
+    $(document).click(function (e) {
+      if (!$(e.target).closest(".searchbox, .searchbtn").length) {
+        $(".searchbox").slideUp();
+      }
+    });
+  } else {
+    // Remove the code for screens larger than 768px width
+    $(".searchbtn").off("click");
+    $(document).off("click");
   }
+}
+
+$(document).ready(function () {
+  checkScreenWidth();
+
+  $(window).resize(function () {
+    checkScreenWidth();
+  });
 });
 
 // currency exchange toggle
