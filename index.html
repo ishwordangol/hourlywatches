@@ -927,15 +927,49 @@
             <p class="text-center lg:text-left">© 2023 Hourly Watches</p>
           </div>
           <div class="flex items-center justify-center md:justify-end">
-            <button class="flex items-center">
-              <span
-                class="inline-block icon-exchange text-xl px-2 font-bold"
-              ></span>
-              <span class="inline-block">Change currency</span>
-              <span
-                class="inline-block icon-chevron-up text-xl px-2 font-bold"
-              ></span>
-            </button>
+            <div class="relative">
+              <button
+                class="flex items-center hover:text-primary btn-currency-change"
+              >
+                <span
+                  class="inline-block icon-exchange text-xl px-2 font-bold"
+                ></span>
+                <span class="inline-block">Change currency</span>
+                <span
+                  class="inline-block icon-chevron-up text-xl px-2 font-bold"
+                ></span>
+              </button>
+              <div
+                class="currency-block hidden absolute w-full bottom-full bg-white border p-4 mb-3 z-50"
+              >
+                <ul class="space-y-2">
+                  <li>
+                    <button
+                      class="w-full flex items-center space-x-4 bg-gray-100 p-2 rounded-lg hover:bg-gray-200"
+                    >
+                      <img
+                        src="assets/images/USA-flag.png"
+                        alt="USA Flag"
+                        class="h-4"
+                      />
+                      <span class="block">USA</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="w-full flex items-center space-x-4 bg-gray-100 p-2 rounded-lg hover:bg-gray-200"
+                    >
+                      <img
+                        src="assets/images/UAE-flag.png"
+                        alt="UAE Flag"
+                        class="h-4"
+                      />
+                      <span class="block">UAE</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
