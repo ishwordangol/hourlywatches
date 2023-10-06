@@ -147,6 +147,11 @@ body {
   z-index: 9999;
 }
 
+.header_main.header_dark.header-fixed {
+  background: var(--secondary);
+  border: none;
+}
+
 .header-fixed nav .navigation-portrait .nav-menus-wrapper {
   height: 100vh;
 }
