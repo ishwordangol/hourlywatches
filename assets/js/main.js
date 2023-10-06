@@ -121,9 +121,6 @@ $("#featuredwatchSlider, #featuredbrandSlider, #newarrivalSlider").slick({
 
 // search toggle
 
-function goToSearchtPage() {
-  window.location.href = "search.html"; // Change the URL to your desired next page
-}
 function checkScreenWidth() {
   if ($(window).width() >= 768) {
     $('.searchbtn').click(function (e) {
@@ -152,10 +149,10 @@ $(document).ready(function () {
 
 // currency exchange toggle
 
-$('.btn-currency-change').click(function () {
+$('.btn-currency-change').on('click touchstart', function () {
   $('.currency-block').slideToggle().show();
 });
-$(document).click(function (e) {
+$(document).on('click touchstart', function (e) {
   if (!$(e.target).closest(".currency-block, .btn-currency-change").length) {
     $(".currency-block").slideUp();
   }
