@@ -118,6 +118,20 @@ $("#featuredwatchSlider, #featuredbrandSlider, #newarrivalSlider").slick({
   ],
 });
 
+
+// search toggle
+
+$('.searchbtn').click(function () {
+  $('.searchbox').slideToggle().show();
+});
+$(document).click(function (e) {
+  if (!$(e.target).closest(".searchbox, .searchbtn").length) {
+    $(".searchbox").slideUp();
+  }
+});
+
+// currency exchange toggle
+
 $('.btn-currency-change').click(function () {
   $('.currency-block').slideToggle().show();
 });
@@ -126,3 +140,4 @@ $(document).click(function (e) {
     $(".currency-block").slideUp();
   }
 });
+

@@ -61,10 +61,20 @@
           <ul
             class="order-last lg:order-none flex-1 lg:flex-none flex items-center justify-end space-x-4"
           >
-            <li>
-              <a href="#" class="hover:text-primary"
-                ><span class="icon-search text-xl"></span
-              ></a>
+            <li class="relative">
+              <button class="hover:text-primary searchbtn">
+                <span class="icon-search text-xl"></span>
+              </button>
+              <div
+                class="hidden absolute top-full -right-20 xs:right-0 w-72 mt-2 md:mt-4 z-50 searchbox"
+              >
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search your product"
+                  class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
+                />
+              </div>
             </li>
             <li>
               <a href="#" class="hover:text-primary"
