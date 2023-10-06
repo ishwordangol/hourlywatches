@@ -161,12 +161,4 @@ $(document).click(function (e) {
   }
 });
 
-// show menu
-
-function showDiv() {
-  document.getElementsByClassName("nav-menu").style.display = "block";
-}
-
-// Set a delay of 3000 milliseconds (3 seconds) before showing the div
-setTimeout(showDiv, 3000);
 
