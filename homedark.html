@@ -19,6 +19,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/tailwind.config.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="assets/css/icomoon.css"
@@ -60,10 +61,20 @@
           <ul
             class="order-last lg:order-none flex-1 lg:flex-none flex items-center justify-end space-x-4"
           >
-            <li>
-              <a href="#" class="text-gray-200 hover:text-primary"
-                ><span class="icon-search text-xl"></span
-              ></a>
+            <li class="relative">
+              <button class="text-gray-200 hover:text-primary searchbtn">
+                <span class="icon-search text-xl"></span>
+              </button>
+              <div
+                class="hidden absolute top-full -right-20 xs:right-0 w-72 mt-2 md:mt-4 z-50 searchbox"
+              >
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search your product"
+                  class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
+                />
+              </div>
             </li>
             <li>
               <a href="#" class="text-gray-200 hover:text-primary"
@@ -140,7 +151,7 @@
             >
               <img
                 src="assets/images/explore-collection/collectors-pick.png"
-                class="w-full h-56 md:h-64 lg:h-72 xl:h-84 object-contain aspect-[1/1]"
+                class="w-full object-contain aspect-[1/1]"
                 alt="Collector's Pick"
               />
             </a>
@@ -162,7 +173,7 @@
             >
               <img
                 src="assets/images/explore-collection/independent.png"
-                class="w-full h-56 md:h-64 lg:h-72 xl:h-84 object-contain aspect-[1/1]"
+                class="w-full object-contain aspect-[1/1]"
                 alt="Independent"
               />
             </a>
@@ -185,7 +196,7 @@
             >
               <img
                 src="assets/images/explore-collection/limited-edition.png"
-                class="w-full h-56 md:h-64 lg:h-72 xl:h-84 object-contain aspect-[1/1]"
+                class="w-full object-contain aspect-[1/1]"
                 alt="Limited Edition"
               />
             </a>
@@ -208,7 +219,7 @@
             >
               <img
                 src="assets/images/explore-collection/collectors-pick.png"
-                class="w-full h-56 md:h-64 lg:h-72 xl:h-84 object-contain aspect-[1/1]"
+                class="w-full object-contain aspect-[1/1]"
                 alt="Collector's Pick"
               />
             </a>
@@ -231,7 +242,7 @@
             >
               <img
                 src="assets/images/explore-collection/independent.png"
-                class="w-full h-56 md:h-64 lg:h-72 xl:h-84 object-contain aspect-[1/1]"
+                class="w-full object-contain aspect-[1/1]"
                 alt="Independent"
               />
             </a>
@@ -255,7 +266,7 @@
             >
               <img
                 src="assets/images/explore-collection/limited-edition.png"
-                class="w-full h-56 md:h-64 lg:h-72 xl:h-84 object-contain aspect-[1/1]"
+                class="w-full object-contain aspect-[1/1]"
                 alt="Limited Edition"
               />
             </a>
@@ -272,7 +283,7 @@
           </div>
         </div>
         <div
-          class="hidden md:flex justify-center w-full top-1/2 absolute -translate-y-1/2"
+          class="hidden lg:flex justify-center w-full top-1/2 absolute -translate-y-1/2"
         >
           <div class="flex justify-center w-1/3">
             <div
@@ -472,6 +483,29 @@
                 <span class="price block">AED 510,818</span>
               </div>
             </div>
+            <div class="w-full slider-items">
+              <a
+                href="#"
+                class="flex items-center justify-center exploreSlide-item w-full h-auto"
+              >
+                <img
+                  src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                  class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                  alt="Legacy Machine Perpetual"
+                />
+              </a>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Legacy Machine Perpetual</a
+                  >
+                </div>
+                <span class="price block">AED 693,318</span>
+              </div>
+            </div>
           </div>
           <div class="mt-8 flex justify-center">
             <button class="flex items-center btntexthover">
@@ -595,6 +629,27 @@
                     ><img
                       src="assets/images/featured-brands/Logos/frank-muller.png"
                       alt="franck-muller"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full slider-items">
+              <a
+                href="#"
+                class="bg-bg_gray flex items-center justify-center exploreSlide-item w-full h-auto"
+              >
+                <img
+                  src="assets/images/featured-brands/omega.jpg"
+                  class="w-full h-56 object-cover"
+                  alt="Omega"
+                />
+              </a>
+              <div class="flex flex-col items-center justify-center">
+                <div class="brandLogo">
+                  <a href="#" class=""
+                    ><img
+                      src="assets/images/featured-brands/Logos/omega.png"
+                      alt="Omega"
                   /></a>
                 </div>
               </div>
@@ -748,6 +803,31 @@
                 <span class="price block">AED 55,950</span>
               </div>
             </div>
+            <div class="w-full slider-items">
+              <a
+                href="#"
+                class="flex items-center justify-center exploreSlide-item w-full h-auto"
+              >
+                <img
+                  src="assets/images/new-arrival/round-collection.png"
+                  class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                  alt="Round Collection 2"
+                />
+              </a>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >FRANCK MULLER</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Round Collection 2</a
+                  >
+                </div>
+                <span class="price block">AED 20,950</span>
+              </div>
+            </div>
           </div>
           <div class="mt-8 flex justify-center">
             <button class="flex items-center btntexthover">
@@ -848,7 +928,7 @@
           </div>
           <div class="flex justify-center col-span-1 lg:col-span-2">
             <img
-              src="assets/images/payment-gateway.png"
+              src="assets/images/payment_gateway.png"
               alt="Payment Gateway"
             />
           </div>
@@ -964,7 +1044,7 @@
                         alt="UAE Flag"
                         class="h-4"
                       />
-                      <span class="block">UAE</span>
+                      <span class="block">AED</span>
                     </button>
                   </li>
                 </ul>
@@ -980,6 +1060,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <script src="assets/js/megamenu.js"></script>
     <script src="assets/js/drawer.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

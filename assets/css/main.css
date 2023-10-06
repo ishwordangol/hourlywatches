@@ -170,6 +170,11 @@ body {
   height: 100vh;
 }
 
+/* search */
+.searchbox {
+  box-shadow: 0 8px 24px #0000001a;
+}
+
 /* slider */
 
 .homeslider .slick-slide {
