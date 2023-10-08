@@ -186,9 +186,6 @@
     background-color: #fff;
   }
 
-  .drawer--top.drawer-search .drawer-nav {
-    height: 100vh;
-  }
   @media (min-width: 64em) {
     .drawer--sidebar .drawer-hamburger {
       display: none;

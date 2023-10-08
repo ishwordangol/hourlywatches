@@ -342,6 +342,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .drawer--top.drawer-search .drawer-nav {
+    height: 100vh;
+    padding: 0;
+    z-index: 10000;
+  }
+
   .slider-items:hover {
     box-shadow: none;
   }

@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <header class="py-4 md:py-7 header_main">
+    <header class="py-4 md:py-7 header_main z-40">
       <div class="container">
         <div class="flex lg:justify-between items-center">
           <div class="ml-8 lg:ml-0 logo order-2 lg:order-none">
@@ -162,99 +162,6 @@
               ></a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="block md:hidden drawer drawer--top drawer-search">
-        <div class="drawer-nav">
-          <div class="relative w-full z-50 p-4 bg-white">
-            <div class="flex items-center gap-2">
-              <div class="relative w-full">
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="Search your product"
-                  class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
-                />
-                <button class="absolute btn-srch absolute right-0 h-11 px-4">
-                  <span class="icon-search text-black text-lg"></span>
-                </button>
-              </div>
-              <div
-                class="flex items-center justify-center w-11 h-11 bg-black drawer-toggle cursor-pointer"
-              >
-                <button class="drawer-close">
-                  <span class="icon-x text-white text-lg"></span>
-                </button>
-              </div>
-            </div>
-
-            <div class="mt-4 grid grid-cols-1 gap-8">
-              <div>
-                <h2 class="mb-4 text-lg">Recommended for you</h2>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-search"></span
-                      ><span class="block">Horological Machinie</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-search"></span
-                      ><span class="block">Endeavour, 1200-0401</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-search"></span
-                      ><span class="block">Chronograph</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-search"></span
-                      ><span class="block">1941 Remontoire</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-search"></span
-                      ><span class="block">Watches</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-search"></span
-                      ><span class="block">New Watch</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 class="mb-4 text-lg">Top Brands</h2>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-chevrons-right"></span
-                      ><span class="block">Rolex</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-chevrons-right"></span
-                      ><span class="block">Omega</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="flex items-center hover:text-primary"
-                      ><span class="block px-2 icon-chevrons-right"></span
-                      ><span class="block">Frank Muller</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </header>
@@ -1217,6 +1124,100 @@
         </div>
       </div>
     </section>
+
+    <div class="block md:hidden drawer drawer--top drawer-search z-50">
+      <div class="drawer-nav z-50">
+        <div class="relative w-full z-50 p-4 bg-white">
+          <div class="flex items-center gap-2">
+            <div class="relative w-full">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search your product"
+                class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
+              />
+              <button class="absolute btn-srch absolute right-0 h-11 px-4">
+                <span class="icon-search text-black text-lg"></span>
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-center w-11 h-11 bg-black drawer-toggle cursor-pointer"
+            >
+              <button class="drawer-close">
+                <span class="icon-x text-white text-lg"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-1 gap-8">
+            <div>
+              <h2 class="mb-4 text-lg">Recommended for you</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Horological Machinie</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Endeavour, 1200-0401</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Chronograph</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">1941 Remontoire</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Watches</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">New Watch</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-4 text-lg">Top Brands</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-chevrons-right"></span
+                    ><span class="block">Rolex</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-chevrons-right"></span
+                    ><span class="block">Omega</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-chevrons-right"></span
+                    ><span class="block">Frank Muller</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
