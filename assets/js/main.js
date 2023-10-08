@@ -13,6 +13,8 @@ $(".mainslider").slick({
   arrows: false,
   autoplay: true,
   dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 768,

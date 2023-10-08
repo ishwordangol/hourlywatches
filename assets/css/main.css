@@ -177,6 +177,18 @@ body {
 
 /* slider */
 
+.mainslider .slickbox {
+  display: none;
+}
+
+.mainslider .slickbox:first-child {
+  display: flex;
+}
+
+.mainslider.slick-initialized .slickbox {
+  display: flex;
+}
+
 .homeslider .slick-slide {
   margin: 16px 8px;
 }
