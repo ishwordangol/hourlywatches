@@ -7,6 +7,8 @@ $(window).scroll(function () {
   else sticky.removeClass("header-fixed border-b animate__animated animate__fadeInDown");
 });
 
+$(".drawer").drawer();
+
 $(".mainslider").slick({
   arrows: false,
   autoplay: true,
