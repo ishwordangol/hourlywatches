@@ -1,0 +1,2480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Listing Page</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link
+      rel="stylesheet"
+      href="assets/css/icomoon.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" href="assets/css/drawer.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="py-4 md:py-7 header_main z-40 bg-secondary">
+      <div class="container">
+        <div class="flex lg:justify-between items-center">
+          <div class="ml-8 lg:ml-0 logo order-2 lg:order-none">
+            <img
+              src="assets/images/logo_Hourly-dark.svg"
+              alt="Hourly Logo"
+              class="h-8 sm:h-11"
+            />
+          </div>
+
+          <nav class="order-1 lg:order-none">
+            <div id="navigation1" class="navigation">
+              <div class="nav-toggle"></div>
+              <div class="nav-menus-wrapper">
+                <ul class="nav-menu">
+                  <li><a href="#" class="text-gray-200">All Watches</a></li>
+                  <li><a href="#" class="text-gray-200">NEW ARRIVALS </a></li>
+                  <li><a href="#" class="text-gray-200">BRANDS</a></li>
+                  <li><a href="#" class="text-gray-200">SELL & TRADE</a></li>
+                  <li><a href="#" class="text-gray-200">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <ul
+            class="order-last lg:order-none flex-1 lg:flex-none flex items-center justify-end space-x-4"
+          >
+            <li class="block md:hidden drawer-toggle" data-target="drawerTop">
+              <button class="text-gray-200 hover:text-primary">
+                <span class="icon-search text-xl"></span>
+              </button>
+            </li>
+            <li class="relative hidden md:block">
+              <button class="text-gray-200 hover:text-primary searchbtn">
+                <span class="icon-search text-xl"></span>
+              </button>
+              <div
+                class="hidden absolute top-full -right-20 xs:right-0 w-[600px] mt-2 md:mt-4 z-50 searchbox p-4 bg-white"
+              >
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search your product"
+                  class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
+                />
+
+                <div class="mt-4 grid grid-cols-2 gap-8">
+                  <div class="border-r">
+                    <h2 class="mb-4 text-lg">Recommended for you</h2>
+                    <ul class="space-y-2">
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-search"></span
+                          ><span class="block">Horological Machinie</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-search"></span
+                          ><span class="block">Endeavour, 1200-0401</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-search"></span
+                          ><span class="block">Chronograph</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-search"></span
+                          ><span class="block">1941 Remontoire</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-search"></span
+                          ><span class="block">Watches</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-search"></span
+                          ><span class="block">New Watch</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="mb-4 text-lg">Top Brands</h2>
+                    <ul class="space-y-2">
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-chevrons-right"></span
+                          ><span class="block">Rolex</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-chevrons-right"></span
+                          ><span class="block">Omega</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="flex items-center hover:text-primary"
+                          ><span class="block px-2 icon-chevrons-right"></span
+                          ><span class="block">Frank Muller</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="text-gray-200 hover:text-primary"
+                ><span class="icon-user text-xl"></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-200 hover:text-primary"
+                ><span class="icon-favorite_outline text-xl"></span
+              ></a>
+            </li>
+            <li class="drawer-toggle" data-target="drawerRight">
+              <a href="#" class="text-gray-200 hover:text-primary"
+                ><span class="icon-shopping-bag text-xl"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="title-wrapper py-9">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl underline text-center uppercase"
+          >
+            All Watches
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="filterWrapper py-2 lg:py-5 border-t border-b">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <button
+            id="togglefilter"
+            data-target="drawerLeft-filter"
+            class="drawer-toggle flex items-center hover:text-primary"
+          >
+            <span
+              class="block icon-sliders px-2 -rotate-90 text-lg xs:text-xl"
+            ></span
+            ><span class="text-xs xs:text-sm toggleText">Hide filters</span>
+          </button>
+          <span class="text-xs xs:text-sm product-count">72 Products</span>
+          <div class="text-xs xs:text-sm nice-select-transparent">
+            <select>
+              <option data-display="Sort By">Sort By</option>
+              <option value="feature">Featured Product</option>
+              <option value="popular">Popular Product</option>
+              <option value="lowprice">Low to High Price</option>
+              <option value="highprice">High to Low Price</option>
+              <option value="4">Recently Added</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4 mb-32">
+      <div class="container">
+        <div class="grid grid-cols-5 gap-8 items-start">
+          <div class="hidden md:block col-span-2 lg:col-span-1">
+            <div class="filterWrapper">
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">Price</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <div class="flex space-x-2">
+                    <input
+                      class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                      id="minprice"
+                      type="number"
+                      placeholder="Min"
+                    />
+                    <input
+                      class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                      id="maxprice"
+                      type="number"
+                      placeholder="Max"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">Brand</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+
+                    <button
+                      class="show-more-btn flex items-center justify-center px-2"
+                    >
+                      <span
+                        class="viewmore_icon flex items-center justify-center"
+                        >[<span class="icon"></span>]</span
+                      >
+                      <span class="viewmore_text ml-2">View More</span>
+                    </button>
+                    <div class="filter-hidden hidden mt-4 space-y-2">
+                      <div class="checkbox px-2">
+                        <input
+                          id="rolex"
+                          name="rolex"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="rolex" class="text-xs">Rolex</label>
+                      </div>
+
+                      <div class="checkbox px-2">
+                        <input
+                          id="audemar"
+                          name="audemar"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="audemar" class="text-xs"
+                          >Audemars Piguet</label
+                        >
+                      </div>
+
+                      <div class="checkbox px-2">
+                        <input
+                          id="bethune"
+                          name="bethune"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="bethune" class="text-xs">De Bethune</label>
+                      </div>
+
+                      <div class="checkbox px-2">
+                        <input
+                          id="patek"
+                          name="patek"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="patek" class="text-xs"
+                          >Patek Philippe</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">Model</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+
+                    <button
+                      class="show-more-btn flex items-center justify-center px-2"
+                    >
+                      <span
+                        class="viewmore_icon flex items-center justify-center"
+                        >[<span class="icon"></span>]</span
+                      >
+                      <span class="viewmore_text ml-2">View More</span>
+                    </button>
+                    <div class="filter-hidden hidden mt-4 space-y-2">
+                      <div class="checkbox px-2">
+                        <input
+                          id="rolex"
+                          name="rolex"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="rolex" class="text-xs">Rolex</label>
+                      </div>
+
+                      <div class="checkbox px-2">
+                        <input
+                          id="audemar"
+                          name="audemar"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="audemar" class="text-xs"
+                          >Audemars Piguet</label
+                        >
+                      </div>
+
+                      <div class="checkbox px-2">
+                        <input
+                          id="bethune"
+                          name="bethune"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="bethune" class="text-xs">De Bethune</label>
+                      </div>
+
+                      <div class="checkbox px-2">
+                        <input
+                          id="patek"
+                          name="patek"
+                          type="checkbox"
+                          value="yes"
+                        />
+                        <label for="patek" class="text-xs"
+                          >Patek Philippe</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">Case Size</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">Gender</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">Case Material</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">STRAP MATERIAL</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">CERTIFICATE</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">DIAL COLOR</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">MOVEMENT</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">AVAIBILITY</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filterlist">
+                <button
+                  class="accordion w-full flex items-center justify-between uppercase"
+                >
+                  <span class="hover:text-secondary">WARRANTY</span>
+                </button>
+                <div class="filtercontent w-full py-4">
+                  <input
+                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                    id="brandinput"
+                    type="text"
+                    placeholder="Enter Brand Name"
+                  />
+                  <div class="mt-4 space-y-2">
+                    <div class="checkbox px-2">
+                      <input
+                        id="rolex"
+                        name="rolex"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="rolex" class="text-xs">Rolex</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="audemar"
+                        name="audemar"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="audemar" class="text-xs"
+                        >Audemars Piguet</label
+                      >
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="bethune"
+                        name="bethune"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="bethune" class="text-xs">De Bethune</label>
+                    </div>
+
+                    <div class="checkbox px-2">
+                      <input
+                        id="patek"
+                        name="patek"
+                        type="checkbox"
+                        value="yes"
+                      />
+                      <label for="patek" class="text-xs">Patek Philippe</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-full md:col-span-3 lg:col-span-4 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+          >
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/horological-machine.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Horological Machinie"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Horological Machinie</a
+                  >
+                </div>
+                <span class="price block">AED 401,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/endeavour.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Endeavour, 1200-0401"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >H. MOSER & CIE.</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Endeavour, 1200-0401</a
+                  >
+                </div>
+                <span class="price block">AED 401,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Legacy Machine Perpetual"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Legacy Machine Perpetual</a
+                  >
+                </div>
+                <span class="price block">AED 693,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/chronograph.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Chronograph"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >FRANCK MULLER</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Chronograph</a
+                  >
+                </div>
+                <span class="price block">AED 127,218</span>
+              </div>
+            </div>
+            <div class="advertisement col-span-2">
+              <a href="#"
+                ><img src="assets/images/ad1.png" class="w-full" alt="ad1"
+              /></a>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/1941-remontoire.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="1941 Remontoire"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >GRÖNEFELD</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >1941 Remontoire</a
+                  >
+                </div>
+                <span class="price block">AED 510,818</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Legacy Machine Perpetual"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Legacy Machine Perpetual</a
+                  >
+                </div>
+                <span class="price block">AED 693,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/horological-machine.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Horological Machinie"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Horological Machinie</a
+                  >
+                </div>
+                <span class="price block">AED 401,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/endeavour.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Endeavour, 1200-0401"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >H. MOSER & CIE.</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Endeavour, 1200-0401</a
+                  >
+                </div>
+                <span class="price block">AED 401,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Legacy Machine Perpetual"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Legacy Machine Perpetual</a
+                  >
+                </div>
+                <span class="price block">AED 693,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/chronograph.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Chronograph"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >FRANCK MULLER</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Chronograph</a
+                  >
+                </div>
+                <span class="price block">AED 127,218</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/1941-remontoire.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="1941 Remontoire"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >GRÖNEFELD</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >1941 Remontoire</a
+                  >
+                </div>
+                <span class="price block">AED 510,818</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Legacy Machine Perpetual"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Legacy Machine Perpetual</a
+                  >
+                </div>
+                <span class="price block">AED 693,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Legacy Machine Perpetual"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary">MB&F</a>
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Legacy Machine Perpetual</a
+                  >
+                </div>
+                <span class="price block">AED 693,318</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/chronograph.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Chronograph"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >FRANCK MULLER</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Chronograph</a
+                  >
+                </div>
+                <span class="price block">AED 127,218</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/chronograph.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="Chronograph"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >FRANCK MULLER</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >Chronograph</a
+                  >
+                </div>
+                <span class="price block">AED 127,218</span>
+              </div>
+            </div>
+            <div class="w-full product-items">
+              <div class="relative">
+                <a
+                  href="#"
+                  class="flex items-center justify-center exploreSlide-item w-full h-auto"
+                >
+                  <img
+                    src="assets/images/featured-watches/1941-remontoire.png"
+                    class="w-full h-56 md:h-64 lg:h-72 object-contain aspect-[2/3]"
+                    alt="1941 Remontoire"
+                  />
+                </a>
+                <button class="absolute top-4 right-4 hover:text-primary">
+                  <span class="icon-favorite_outline text-xl"></span>
+                </button>
+              </div>
+              <div class="py-4 px-4 flex flex-col items-center justify-center">
+                <div class="brandName mb-1">
+                  <a href="#" class="uppercase text-xs text-primary"
+                    >GRÖNEFELD</a
+                  >
+                </div>
+                <div class="productName mb-2">
+                  <a href="#" class="uppercase text-base line-clamp-1"
+                    >1941 Remontoire</a
+                  >
+                </div>
+                <span class="price block">AED 510,818</span>
+              </div>
+            </div>
+            <div class="advertisement col-span-2">
+              <a href="#"
+                ><img src="assets/images/ad2.png" class="w-full" alt="ad2"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-bg_gray py-12 sm:py-16 md:py-18 lg:py-20">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8 xl:gap-16 items-center"
+        >
+          <div class="col-span-1 lg:col-span-3 newsletterWrapper">
+            <h4 class="uppercase mb-2">Subscribe to our newsletter</h4>
+            <div class="flex">
+              <input
+                type="email"
+                id="email"
+                class="outline-none border rounded-none border-r-0 border-gray-200 text-gray-900 text-xs block w-full p-1 px-3"
+                placeholder="Your Email"
+                required
+              />
+              <button
+                type="submit"
+                class="text-white bg-primary hover:bg-secondary font-medium text-sm px-5 py-1 text-center"
+              >
+                <span class="icon-chevron-right text-3xl"></span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-span-1 lg:col-span-3 grid grid-cols-4 gap-4 md:p-4 md:px-4 xl:px-16 md:border-l-2 md:border-r-2"
+          >
+            <div class="flex flex-col justify-center text-center">
+              <div class="flex justify-center mb-2">
+                <a
+                  href="#"
+                  class="flex items-center justify-center w-8 h-8 rounded-full border border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  <span class="icon-phone-call block text-base"></span>
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block text-xs uppercase hover:text-primary hover:underline"
+                >Call us</a
+              >
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <div class="flex justify-center mb-2">
+                <a
+                  href="#"
+                  class="flex items-center justify-center w-8 h-8 rounded-full border border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  <span class="icon-mail block text-base"></span>
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block text-xs uppercase hover:text-primary hover:underline"
+                >Email us</a
+              >
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <div class="flex justify-center mb-2">
+                <a
+                  href="#"
+                  class="flex items-center justify-center w-8 h-8 rounded-full border border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  <span class="icon-twitch block text-base"></span>
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block text-xs uppercase hover:text-primary hover:underline"
+                >Blogs</a
+              >
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <div class="flex justify-center mb-2">
+                <a
+                  href="#"
+                  class="flex items-center justify-center w-8 h-8 rounded-full border border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  <span class="icon-play block text-base"></span>
+                </a>
+              </div>
+              <a
+                href="#"
+                class="block text-xs uppercase hover:text-primary hover:underline"
+                >Videos</a
+              >
+            </div>
+          </div>
+          <div class="flex justify-center col-span-1 lg:col-span-2">
+            <img
+              src="assets/images/payment_gateway.png"
+              alt="Payment Gateway"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="footerWrapper relative pt-12 sm:pt-16 md:pt-18 lg:pt-20 pb-12 lg:pb-16 leading-none"
+    >
+      <div class="container">
+        <div
+          class="footerSection grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-2"
+        >
+          <div>
+            <h3 class="uppercase mb-6 whitespace-nowrap text-base">
+              Information
+            </h3>
+            <ul class="space-y-4">
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Work With Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="uppercase mb-6 whitespace-nowrap text-base">Brands</h3>
+            <ul class="space-y-4">
+              <li><a href="#">Rolex</a></li>
+              <li><a href="#">Omega</a></li>
+              <li><a href="#">Hublot</a></li>
+              <li><a href="#">Audemars Piquet</a></li>
+              <li><a href="#">Patek Phillipe</a></li>
+              <li><a href="#">All Brands</a></li>
+              <li><a href="#">Tudor</a></li>
+              <li><a href="#">Aventi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="uppercase mb-6 whitespace-nowrap text-base">Services</h3>
+            <ul class="space-y-4">
+              <li><a href="#">Sell Your Watch</a></li>
+              <li><a href="#">Trade Your Watch</a></li>
+              <li><a href="#">Blogs/Articles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="uppercase mb-6 whitespace-nowrap text-base">
+              Do you need help?
+            </h3>
+            <ul class="space-y-4">
+              <li><a href="#">Call us 800 HOURLY</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Chat with our Client Service</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="uppercase mb-6 whitespace-nowrap text-base">Legal</h3>
+            <ul class="space-y-4">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Return & Reund Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="relative copyright py-4 lg:py-7 border-t">
+      <div class="container">
+        <div
+          class="inline-grid grid-cols-1 sm:grid-cols-2 w-full gap-2 sm:gap-0"
+        >
+          <div class="flex items-center justify-center sm:justify-start">
+            <p class="text-center lg:text-left">© 2023 Hourly Watches</p>
+          </div>
+          <div class="flex items-center justify-center md:justify-end">
+            <div class="relative">
+              <button
+                class="flex items-center hover:text-primary btn-currency-change"
+              >
+                <span
+                  class="inline-block icon-exchange text-xl px-2 font-bold"
+                ></span>
+                <span class="inline-block">Change currency</span>
+                <span
+                  class="inline-block icon-chevron-up text-xl px-2 font-bold"
+                ></span>
+              </button>
+              <div
+                class="currency-block hidden absolute w-full bottom-full bg-white border p-4 mb-3 z-50"
+              >
+                <ul class="space-y-2">
+                  <li>
+                    <button
+                      class="w-full flex items-center space-x-4 bg-gray-100 p-2 rounded-lg hover:bg-gray-200"
+                    >
+                      <img
+                        src="assets/images/USA-flag.png"
+                        alt="USA Flag"
+                        class="h-4"
+                      />
+                      <span class="block">USD</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="w-full flex items-center space-x-4 bg-gray-100 p-2 rounded-lg hover:bg-gray-200"
+                    >
+                      <img
+                        src="assets/images/UAE-flag.png"
+                        alt="UAE Flag"
+                        class="h-4"
+                      />
+                      <span class="block">AED</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="block md:hidden drawer drawer--top drawer-search z-50"
+      id="drawerTop"
+    >
+      <div class="drawer-nav z-50">
+        <div class="relative w-full z-50 p-4 bg-white">
+          <div class="flex items-center gap-2">
+            <div class="relative w-full">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search your product"
+                class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
+              />
+              <button class="absolute btn-srch absolute right-0 h-11 px-4">
+                <span class="icon-search text-black text-lg"></span>
+              </button>
+            </div>
+            <div
+              class="flex items-center justify-center w-11 h-11 bg-black drawer-toggle cursor-pointer"
+            >
+              <button>
+                <span class="icon-x text-white text-lg"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-1 gap-8">
+            <div>
+              <h2 class="mb-4 text-lg">Recommended for you</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Horological Machinie</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Endeavour, 1200-0401</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Chronograph</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">1941 Remontoire</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">Watches</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-search"></span
+                    ><span class="block">New Watch</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-4 text-lg">Top Brands</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-chevrons-right"></span
+                    ><span class="block">Rolex</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-chevrons-right"></span
+                    ><span class="block">Omega</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="flex items-center hover:text-primary"
+                    ><span class="block px-2 icon-chevrons-right"></span
+                    ><span class="block">Frank Muller</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer drawer--right drawer-largescreen" id="drawerRight">
+      <div class="drawer-nav p-8">
+        <div class="flex justify-end mb-16">
+          <span
+            class="icon-x drawer-toggle text-4xl cursor-pointer hover:text-primary"
+          ></span>
+        </div>
+        <h3 class="uppercase font-bold">Shopping Bag</h3>
+        <div class="mt-9">
+          <div class="flex gap-8 mb-16">
+            <div class="flex flex-col justify-center w-16">
+              <img
+                src="assets/images/featured-watches/1941-remontoire.png"
+                alt="1941-remontoire"
+                class="w-full object-contain"
+              />
+              <button class="text-xs uppercase mt-4 block hover:text-primary">
+                Remove
+              </button>
+            </div>
+            <div class="flex-1">
+              <div class="mb-4">
+                <h3 class="text-xs uppercase">
+                  <a href="#" class="hover:text-primary">PATEK PHILIPPE</a>
+                </h3>
+                <h2 class="uppercase">
+                  <a href="#" class="hover:text-primary">GRAND COMPLICATIONS</a>
+                </h2>
+              </div>
+              <span class="product-num block text-xs">5140J-001</span>
+              <span class="sku-num block text-xs">SKU#4792644</span>
+              <span class="price block uppercase mt-4">AED 182,318</span>
+            </div>
+          </div>
+          <div class="flex gap-8 mb-16">
+            <div class="flex flex-col justify-center w-16">
+              <img
+                src="assets/images/featured-watches/legacy-machine-perpetual.png"
+                alt="1941-remontoire"
+                class="w-full object-contain"
+              />
+              <button class="text-xs uppercase mt-4 block hover:text-primary">
+                Remove
+              </button>
+            </div>
+            <div class="flex-1">
+              <div class="mb-4">
+                <h3 class="text-xs uppercase">
+                  <a href="#" class="hover:text-primary">ROLEX</a>
+                </h3>
+                <h2 class="uppercase">
+                  <a href="#" class="hover:text-primary"
+                    >Submariner Date "Hulk</a
+                  >
+                </h2>
+              </div>
+              <span class="product-num block text-xs">116610LV</span>
+              <span class="sku-num block text-xs">SKU#116610LV-0002</span>
+              <span class="price block uppercase mt-4">AED 82,000</span>
+            </div>
+          </div>
+        </div>
+        <div class="mb-9">
+          <div class="flex justify-between items-center py-2 border-b">
+            <span class="block uppercase font-bold">Sub Total</span>
+            <span class="block font-bold">AED 182,318.00</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b">
+            <span class="block uppercase font-bold">Shipping</span>
+            <span class="block font-bold">AED 00.00</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b">
+            <span class="block uppercase font-bold">VAT</span>
+            <span class="block font-bold">AEd 9,115.90</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="block uppercase font-bold">Total Price</span>
+            <span class="block font-bold">AED 191,434.00</span>
+          </div>
+        </div>
+        <button
+          class="uppercase bg-primary text-white w-full uppercase py-3 px-12 whitespace-nowrap hover:bg-secondary"
+        >
+          Checkout
+        </button>
+      </div>
+      <div class="drawer-overlay drawer-toggle"></div>
+    </div>
+
+    <div class="drawer drawer--left block md:hidden" id="drawerLeft-filter">
+      <div class="drawer-nav">
+        <div class="flex items-center justify-between pb-4 mb-4 border-b">
+          <button class="border bg-white py-2 px-4">Clear All</button>
+          <button><span class="icon-x drawer-toggle text-2xl"></span></button>
+        </div>
+        <div class="filterWrapper">
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">Price</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <div class="flex space-x-2">
+                <input
+                  class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                  id="minprice"
+                  type="number"
+                  placeholder="Min"
+                />
+                <input
+                  class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                  id="maxprice"
+                  type="number"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">Brand</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">Model</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">Case Size</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">Gender</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">Case Material</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">STRAP MATERIAL</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">CERTIFICATE</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">DIAL COLOR</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">MOVEMENT</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">AVAIBILITY</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="filterlist">
+            <button
+              class="accordion w-full flex items-center justify-between uppercase"
+            >
+              <span class="hover:text-secondary">WARRANTY</span>
+            </button>
+            <div class="filtercontent w-full py-4">
+              <input
+                class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-primary"
+                id="brandinput"
+                type="text"
+                placeholder="Enter Brand Name"
+              />
+              <div class="mt-4 space-y-2">
+                <div class="checkbox px-2">
+                  <input id="rolex" name="rolex" type="checkbox" value="yes" />
+                  <label for="rolex" class="text-xs">Rolex</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="audemar"
+                    name="audemar"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="audemar" class="text-xs">Audemars Piguet</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input
+                    id="bethune"
+                    name="bethune"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label for="bethune" class="text-xs">De Bethune</label>
+                </div>
+
+                <div class="checkbox px-2">
+                  <input id="patek" name="patek" type="checkbox" value="yes" />
+                  <label for="patek" class="text-xs">Patek Philippe</label>
+                </div>
+
+                <button class="flex items-center justify-center px-2">
+                  [<span class="icon-plus"></span>]
+                  <span class="ml-2">View More</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-overlay drawer-toggle"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/drawer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

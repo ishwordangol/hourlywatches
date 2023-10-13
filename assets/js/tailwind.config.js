@@ -12,7 +12,7 @@ tailwind.config = {
         secondarylight: '#494c5c',
         bg_gray: '#f8f8f8',
         bglight: '#FCF6F3',
-        bluelight: '#679cdb',
+        bluelight: '#5db7f9',
         red: '#ff0000',
         dark_gray: '#7b7b7b',
         facebook: '#4B69B0',

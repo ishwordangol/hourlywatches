@@ -24,8 +24,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-mobile-pin-verify:before {
+  content: "\e940";
+}
 .icon-exchange:before {
   content: "\e933";
+}
+
+.icon-apple:before {
+  content: "\e934";
+  color: #999;
+}
+.icon-applepay:before {
+  content: "\e935";
 }
 
 .icon-social-facebook:before {
@@ -33,6 +45,15 @@
 }
 .icon-keyboard_backspace:before {
   content: "\e900";
+}
+.icon-security:before {
+  content: "\e936";
+}
+.icon-local_shipping:before {
+  content: "\e937";
+}
+.icon-refresh:before {
+  content: "\e938";
 }
 .icon-favorite:before {
   content: "\e901";
@@ -46,6 +67,9 @@
 .icon-view_module:before {
   content: "\e904";
 }
+.icon-shield:before {
+  content: "\e939";
+}
 .icon-east:before {
   content: "\e905";
 }
@@ -54,6 +78,9 @@
 }
 .icon-south:before {
   content: "\e907";
+}
+.icon-verified:before {
+  content: "\e93a";
 }
 .icon-west:before {
   content: "\e908";
@@ -115,6 +142,9 @@
 .icon-menu:before {
   content: "\e917";
 }
+.icon-minus:before {
+  content: "\e93b";
+}
 .icon-more-horizontal:before {
   content: "\e918";
 }
@@ -130,11 +160,20 @@
 .icon-play:before {
   content: "\e931";
 }
+.icon-plus:before {
+  content: "\e93c";
+}
+.icon-rotate-cw:before {
+  content: "\e93d";
+}
 .icon-search:before {
   content: "\e927";
 }
 .icon-shopping-bag:before {
   content: "\e928";
+}
+.icon-sliders:before {
+  content: "\e93e";
 }
 .icon-twitch:before {
   content: "\e932";
@@ -156,6 +195,9 @@
 }
 .icon-users:before {
   content: "\e92e";
+}
+.icon-watch:before {
+  content: "\e93f";
 }
 .icon-x:before {
   content: "\e91a";
