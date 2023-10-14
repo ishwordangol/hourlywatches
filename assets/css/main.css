@@ -316,12 +316,16 @@ input[type="checkbox"]:before {
 }
 
 .slick-dots li {
+  margin: 0;
+}
+
+#exploreSlider .slick-dots li {
   width: 50px;
   height: 2px;
   margin: 0;
 }
 
-.slick-dots li button:before {
+#exploreSlider .slick-dots li button:before {
   width: 50px;
   height: 2px;
   content: "";

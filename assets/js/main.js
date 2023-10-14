@@ -134,6 +134,21 @@ $("#featuredwatchSlider, #featuredbrandSlider, #newarrivalSlider").slick({
   ],
 });
 
+$(".verticalSliderSection").slick({
+  dots: true,
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: "unslick"
+    }
+  ]
+});
+
 
 // search toggle
 var searchboxVisible = false;
