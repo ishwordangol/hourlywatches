@@ -482,6 +482,11 @@ input[type="checkbox"]:before {
   .btn:hover::after {
     display: none;
   }
+
+  .slider-items:hover,
+  .product-items:hover {
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
