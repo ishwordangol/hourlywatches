@@ -237,14 +237,15 @@ $(".accordion").on("click", function () {
   }
 });
 
-var toggleAllButton = $("#togglefilter");
-if ($(".accordion.active").length > 0) {
-  $(".toggleText").text("Show Filters");
-} else {
-  $(".toggleText").text("Hide Filters");
-}
-
 if (window.innerWidth > 768) {
+
+  var toggleAllButton = $("#togglefilter");
+  if ($(".accordion.active").length > 0) {
+    $(".toggleText").text("Show Filters");
+  } else {
+    $(".toggleText").text("Hide Filters");
+  }
+
   $("#togglefilter, .drawer-toggle").on("click", function () {
     var allAccordions = $(".accordion");
     var allContents = $(".filtercontent");
