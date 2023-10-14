@@ -19,6 +19,8 @@ $(".drawer-toggle").click(function () {
   targetDrawer.toggleClass("drawer-open");
 });
 
+$("select").niceSelect();
+
 $(".mainslider").slick({
   arrows: false,
   autoplay: true,
@@ -36,18 +38,6 @@ $(".mainslider").slick({
     },
   ],
 });
-
-$('#verticalSlider').slick({
-
-  slidesToScroll: 1,
-  arrows: false,
-  dots: true,
-  vertical: true,
-  verticalSwiping: true,
-  infinite: false,
-
-});
-
 
 var $slider = $('#exploreSlider');
 
@@ -187,8 +177,6 @@ $(document).on('click touchstart', function (e) {
   }
 });
 
-$("select").niceSelect();
-
 $('.promocode-button').click(function () {
   // Toggle the visibility of the content div
   $('.promocode-content').toggleClass('hidden');
@@ -292,4 +280,3 @@ $(".show-more-btn").click(function () {
     $(this).find(".viewmore_text").text("Show More");
   }
 });
-

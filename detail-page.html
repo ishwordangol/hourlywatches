@@ -204,29 +204,71 @@
       <div class="container">
         <div class="grid grid-cols-2 gap-16">
           <div id="verticalSlider" class="verticalSliderWrapper">
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product1.png" alt="Product 1" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product2.png" alt="Product 2" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product1.png" alt="Product 1" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product2.png" alt="Product 2" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product1.png" alt="Product 1" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product2.png" alt="Product 2" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product1.png" alt="Product 1" />
-            </div>
-            <div class="p-16 bg-bg_gray w-full verticalslideritem">
-              <img src="assets/images/products/product2.png" alt="Product 2" />
+            <div class="verticalSliderSection">
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product1.png"
+                    alt="Product 1"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product2.png"
+                    alt="Product 2"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product1.png"
+                    alt="Product 1"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product2.png"
+                    alt="Product 2"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product1.png"
+                    alt="Product 1"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product2.png"
+                    alt="Product 2"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product1.png"
+                    alt="Product 1"
+                  />
+                </div>
+              </div>
+              <div class="slideVertical">
+                <div class="p-16 bg-bg_gray w-full verticalslideritem">
+                  <img
+                    src="assets/images/products/product2.png"
+                    alt="Product 2"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -312,12 +354,7 @@
               </div>
 
               <div class="expansionWrapper">
-                <div
-                  class="expansionlist pb-4 border-b"
-                  data-aos="fade-down"
-                  data-aos-delay="120"
-                  data-aos-duration="1400"
-                >
+                <div class="expansionlist pb-4 border-b">
                   <a
                     href="#"
                     class="flex items-center justify-between active uppercase"
@@ -341,12 +378,7 @@
                     </p>
                   </div>
                 </div>
-                <div
-                  class="mt-4 md:mt-8 expansionlist pb-4 border-b"
-                  data-aos="fade-down"
-                  data-aos-delay="120"
-                  data-aos-duration="1400"
-                >
+                <div class="mt-4 md:mt-8 expansionlist pb-4 border-b">
                   <a
                     href="#"
                     class="flex items-center justify-between uppercase"
@@ -994,10 +1026,9 @@
     <script src="assets/js/jquery.nice-select.js"></script>
     <script src="assets/js/megamenu.js"></script>
     <script src="assets/js/drawer.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      AOS.init();
+      $("select").niceSelect();
     </script>
   </body>
 </html>
