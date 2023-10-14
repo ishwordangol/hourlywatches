@@ -244,28 +244,24 @@ if ($(".accordion.active").length > 0) {
   $(".toggleText").text("Hide Filters");
 }
 
-$("#togglefilter, .drawer-toggle").on("click", function () {
-  var allAccordions = $(".accordion");
-  var allContents = $(".filtercontent");
-  var isAllCollapsed = allAccordions.filter(".active").length === 0;
+if (window.innerWidth > 768) {
+  $("#togglefilter, .drawer-toggle").on("click", function () {
+    var allAccordions = $(".accordion");
+    var allContents = $(".filtercontent");
+    var isAllCollapsed = allAccordions.filter(".active").length === 0;
 
-  if (isAllCollapsed) {
-    allAccordions.addClass("active");
-    allContents.slideUp(200);
-  } else {
-    allAccordions.removeClass("active");
-    allContents.slideDown(200);
-  }
+    if (isAllCollapsed) {
+      allAccordions.addClass("active");
+      allContents.slideUp(200);
+    } else {
+      allAccordions.removeClass("active");
+      allContents.slideDown(200);
+    }
 
-  // Update icons based on state
-  // allAccordions.each(function () {
-  //   var $icon = $(this).find(".icon");
-  //   $icon.text(isAllCollapsed ? "-" : "+");
-  // });
-
-  // Update button text based on state
-  $(".toggleText").text(isAllCollapsed ? "Show Filters" : "Hide Filters");
-});
+    // Update button text based on state
+    $(".toggleText").text(isAllCollapsed ? "Show Filters" : "Hide Filters");
+  });
+}
 
 // view more
 

@@ -338,3 +338,9 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+@media screen and (max-width: 640px) {
+  .drawer-largescreen .drawer-nav {
+    width: 18.25rem;
+  }
+}
