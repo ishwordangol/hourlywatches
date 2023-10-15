@@ -49,7 +49,7 @@
                     n(t)
                         .find(".nav-menus-wrapper")
                         .prepend(
-                            "<div class='flex justify-between items-center logo-portrait'><a href='/'><img src='./assets/images/logo_Hourly.svg' class='block lg:hidden pl-8 h-10' alt='Logo'/></a><span class='nav-menus-wrapper-close-button'>&#10005;</span></div>"
+                            "<div class='flex justify-between items-center logo-portrait'><a href='/' aria-label='Nav Link'><img src='./assets/images/logo_Hourly.svg' class='block lg:hidden pl-8 h-10' alt='Logo'/></a><span class='nav-menus-wrapper-close-button'>&#10005;</span></div>"
                         ),
                     "right" == r.settings.offCanvasSide &&
                     n(t)
