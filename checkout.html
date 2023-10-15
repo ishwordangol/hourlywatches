@@ -562,6 +562,7 @@
               <button
                 type="submit"
                 class="text-white bg-primary hover:bg-secondary font-medium text-sm px-5 py-1 text-center"
+                aria-labelledby="Submit"
               >
                 <span class="icon-chevron-right text-3xl"></span>
               </button>
@@ -640,6 +641,7 @@
         </div>
       </div>
     </section>
+
     <footer class="relative z-10 bg-white">
       <section
         class="footerWrapper relative pt-12 sm:pt-16 md:pt-18 lg:pt-20 pb-12 lg:pb-16 leading-none"
@@ -653,22 +655,38 @@
                 Information
               </h3>
               <ul class="space-y-4">
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Work With Us</a></li>
+                <li>
+                  <a href="#" aria-label="Footer Information Link">Company</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Information Link"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Information Link"
+                    >Work With Us</a
+                  >
+                </li>
               </ul>
             </div>
             <div>
               <h3 class="uppercase mb-6 whitespace-nowrap text-base">Brands</h3>
               <ul class="space-y-4">
-                <li><a href="#">Rolex</a></li>
-                <li><a href="#">Omega</a></li>
-                <li><a href="#">Hublot</a></li>
-                <li><a href="#">Audemars Piquet</a></li>
-                <li><a href="#">Patek Phillipe</a></li>
-                <li><a href="#">All Brands</a></li>
-                <li><a href="#">Tudor</a></li>
-                <li><a href="#">Aventi</a></li>
+                <li><a href="#" aria-label="Footer Brand Link">Rolex</a></li>
+                <li><a href="#" aria-label="Footer Brand Link">Omega</a></li>
+                <li><a href="#" aria-label="Footer Brand Link">Hublot</a></li>
+                <li>
+                  <a href="#" aria-label="Footer Brand Link">Audemars Piquet</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Brand Link">Patek Phillipe</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Brand Link">All Brands</a>
+                </li>
+                <li><a href="#" aria-label="Footer Brand Link">Tudor</a></li>
+                <li><a href="#" aria-label="Footer Brand Link">Aventi</a></li>
               </ul>
             </div>
             <div>
@@ -676,9 +694,21 @@
                 Services
               </h3>
               <ul class="space-y-4">
-                <li><a href="#">Sell Your Watch</a></li>
-                <li><a href="#">Trade Your Watch</a></li>
-                <li><a href="#">Blogs/Articles</a></li>
+                <li>
+                  <a href="#" aria-label="Footer Service Link"
+                    >Sell Your Watch</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Service Link"
+                    >Trade Your Watch</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Service Link"
+                    >Blogs/Articles</a
+                  >
+                </li>
               </ul>
             </div>
             <div>
@@ -686,19 +716,41 @@
                 Do you need help?
               </h3>
               <ul class="space-y-4">
-                <li><a href="#">Call us 800 HOURLY</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Chat with our Client Service</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li>
+                  <a href="#" aria-label="Footer HelpLine Link"
+                    >Call us 800 HOURLY</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer HelpLine Link">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer HelpLine Link"
+                    >Chat with our Client Service</a
+                  >
+                </li>
+                <li><a href="#" aria-label="Footer HelpLine Link">FAQ</a></li>
               </ul>
             </div>
             <div>
               <h3 class="uppercase mb-6 whitespace-nowrap text-base">Legal</h3>
               <ul class="space-y-4">
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Return & Reund Policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
+                <li>
+                  <a href="#" aria-label="Footer Legal Link"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Legal Link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Legal Link"
+                    >Return & Reund Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Footer Legal Link">Cookie Policy</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -717,6 +769,7 @@
               <div class="relative">
                 <button
                   class="flex items-center hover:text-primary btn-currency-change"
+                  aria-label="Change Currency"
                 >
                   <span
                     class="inline-block icon-exchange text-xl px-2 font-bold"
@@ -733,6 +786,7 @@
                     <li>
                       <button
                         class="w-full flex items-center space-x-4 bg-gray-100 p-2 rounded-lg hover:bg-gray-200"
+                        aria-label="US Currency"
                       >
                         <img
                           src="assets/images/USA-flag.png"
@@ -745,6 +799,7 @@
                     <li>
                       <button
                         class="w-full flex items-center space-x-4 bg-gray-100 p-2 rounded-lg hover:bg-gray-200"
+                        aria-label="UAE Currency"
                       >
                         <img
                           src="assets/images/UAE-flag.png"
@@ -777,14 +832,17 @@
                 placeholder="Search your product"
                 class="w-full rounded-none border border-secondary h-11 px-5 pr-10 text-sm focus:outline-none focus:border-primary"
               />
-              <button class="absolute btn-srch absolute right-0 h-11 px-4">
+              <button
+                class="absolute btn-srch absolute right-0 h-11 px-4"
+                aria-label="Search"
+              >
                 <span class="icon-search text-black text-lg"></span>
               </button>
             </div>
             <div
               class="flex items-center justify-center w-11 h-11 bg-black drawer-toggle cursor-pointer"
             >
-              <button>
+              <button aria-label="Close">
                 <span class="icon-x text-white text-lg"></span>
               </button>
             </div>
@@ -795,37 +853,55 @@
               <h2 class="mb-4 text-lg">Recommended for you</h2>
               <ul class="space-y-2">
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Recommended Product"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-search"></span
                     ><span class="block">Horological Machinie</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Recommended Product"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-search"></span
                     ><span class="block">Endeavour, 1200-0401</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Recommended Product"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-search"></span
                     ><span class="block">Chronograph</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Recommended Product"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-search"></span
                     ><span class="block">1941 Remontoire</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Recommended Product"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-search"></span
                     ><span class="block">Watches</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Recommended Product"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-search"></span
                     ><span class="block">New Watch</span></a
                   >
@@ -836,19 +912,28 @@
               <h2 class="mb-4 text-lg">Top Brands</h2>
               <ul class="space-y-2">
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Brand Name"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-chevrons-right"></span
                     ><span class="block">Rolex</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Brand Name"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-chevrons-right"></span
                     ><span class="block">Omega</span></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="flex items-center hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Brand Name"
+                    class="flex items-center hover:text-primary"
                     ><span class="block px-2 icon-chevrons-right"></span
                     ><span class="block">Frank Muller</span></a
                   >
@@ -877,6 +962,7 @@
                 class="w-full object-contain"
               />
               <button
+                aria-label="Remove"
                 class="text-xs uppercase mt-2 block underline font-light text-primary hover:text-secondary"
               >
                 Remove
@@ -885,10 +971,17 @@
             <div class="flex-1">
               <div class="mb-4">
                 <h3 class="text-xs uppercase">
-                  <a href="#" class="hover:text-primary">PATEK PHILIPPE</a>
+                  <a href="#" aria-label="Brand Name" class="hover:text-primary"
+                    >PATEK PHILIPPE</a
+                  >
                 </h3>
                 <h2 class="uppercase">
-                  <a href="#" class="hover:text-primary">GRAND COMPLICATIONS</a>
+                  <a
+                    href="#"
+                    aria-label="Product Name"
+                    class="hover:text-primary"
+                    >GRAND COMPLICATIONS</a
+                  >
                 </h2>
               </div>
               <span class="product-num block text-xs">5140J-001</span>
@@ -904,6 +997,7 @@
                 class="w-full object-contain"
               />
               <button
+                aria-label="Remove"
                 class="text-xs uppercase mt-2 block underline font-light text-primary hover:text-secondary"
               >
                 Remove
@@ -912,10 +1006,15 @@
             <div class="flex-1">
               <div class="mb-4">
                 <h3 class="text-xs uppercase">
-                  <a href="#" class="hover:text-primary">ROLEX</a>
+                  <a href="#" aria-label="Brand Name" class="hover:text-primary"
+                    >ROLEX</a
+                  >
                 </h3>
                 <h2 class="uppercase">
-                  <a href="#" class="hover:text-primary"
+                  <a
+                    href="#"
+                    aria-label="Product Name"
+                    class="hover:text-primary"
                     >Submariner Date "Hulk</a
                   >
                 </h2>
@@ -945,6 +1044,8 @@
           </div>
         </div>
         <button
+          type="button"
+          aria-label="Checkout"
           class="uppercase bg-primary text-white w-full uppercase py-3 px-12 whitespace-nowrap hover:bg-secondary"
         >
           Checkout
