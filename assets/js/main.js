@@ -19,8 +19,17 @@ $(".drawer-toggle").click(function () {
   targetDrawer.toggleClass("drawer-open");
 });
 
+// nice select
 $("select").niceSelect();
 
+// navbar
+$(".navigation-portrait").hide();
+setTimeout(function () {
+  $(".navigation-portrait").show();
+}, 100); // Change the delay time as needed
+
+
+// Homepage main slider
 $(".mainslider").slick({
   arrows: false,
   autoplay: true,
@@ -39,6 +48,7 @@ $(".mainslider").slick({
   ],
 });
 
+// explore slider
 var $slider = $('#exploreSlider');
 
 $slider.slick({
@@ -83,6 +93,7 @@ $slider.slick({
   ]
 });
 
+// featured sliders
 $("#featuredwatchSlider, #featuredbrandSlider, #newarrivalSlider").slick({
   dots: false,
   infinite: true,
@@ -134,6 +145,7 @@ $("#featuredwatchSlider, #featuredbrandSlider, #newarrivalSlider").slick({
   ],
 });
 
+// vertical sliders
 $(".verticalSliderSection").slick({
   dots: true,
   infinite: false,
