@@ -282,7 +282,7 @@ if (window.innerWidth > 768) {
 // view more
 
 $(".show-more-btn").click(function () {
-  const hiddenContent = $(this).next(".filter-hidden");
+  const hiddenContent = $(this).prev(".filter-hidden");
   hiddenContent.slideToggle();
 
   $(this).toggleClass("active");

@@ -142,9 +142,10 @@
 }
 
 .nice-select-transparent .nice-select .list {
-  min-width: 200px;
+  min-width: 160px;
   left: inherit;
   right: 0;
+  margin-top: 16px;
 }
 .nice-select .list:hover .option:not(:hover) {
   background-color: transparent !important;
@@ -161,6 +162,10 @@
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.nice-select-transparent .nice-select .option {
+  text-align: right;
 }
 .nice-select .option:hover,
 .nice-select .option.focus,
